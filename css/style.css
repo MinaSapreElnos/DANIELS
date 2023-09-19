@@ -1,0 +1,333 @@
+
+section{
+    padding-top: 70px;
+}
+header{
+    background-image: url(../img/bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 100vh;
+}
+.text-home h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+.text-home h1{
+    font-size: 80px;
+}
+.text-home h1::after{
+    content: " ";
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing {
+    0%{
+        content: " L|";
+        
+    }
+    10%{
+        content: "La|";
+       
+    }
+    20%{
+        content: "lar|";
+    }
+    30%{
+        content: "larr|";
+    }
+    40%{
+        content: "larry|";
+    }
+    50%{
+        content: "larry |";
+    }
+    60%{
+        content: " Dan|";
+    }
+    70%{
+        content: " Dani|";
+    }
+    80%{
+        content: " Danie|";
+    }
+    90%{
+        content: " Daniel|";
+    }
+    100%{
+        content: "Danieis|";
+
+    }
+}
+
+
+.navbar-default .navbar-nav > li{
+    position: relative;
+}
+
+.navbar-default .navbar-nav  li .active::after {
+    content: "";
+    height: 5px;
+    width: 30px;
+    position:absolute;
+    top: 20px;
+    left: 300px;
+    right: 200px;
+    background-color: rgb(175, 178, 178);
+
+}
+
+
+
+.icons a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+/* start about  */
+#about{
+    width: 80%;
+    margin: auto;
+}
+.about-img{
+    position: relative;
+}
+.about-img::before{
+    content: "";
+    height: 400px;
+    width: 50px;
+    position: absolute;
+    top:30% ;
+    bottom: 0;
+    left: -3%;
+    background-image: url(../img/dots.png);
+
+}
+.about-img::after{
+    content: "";
+    height: 50px;
+    width: 455px;
+    position: absolute;
+    top:100% ;
+    bottom: 0;
+    left: -3%;
+    background-image: url(../img/dots.png);
+}
+
+
+
+
+
+
+.rogres-bar .progress{
+    margin-bottom: 20px;
+    height: 23px;
+    text-align: left;
+}
+.progress-bar{
+    text-align: left;
+    position: relative;
+}
+.progress-bar::after{
+    content: "95%";
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    bottom: 0px;
+}
+
+.about-text .btn-black a{
+    text-decoration: none;
+    color:white;
+}
+.about-text .btn-black{
+    background-color: black;
+    padding: 10px 25px;
+    margin-right: 10px;
+    color:white;
+    transition: .5s all;
+    border-radius: 10px;
+}
+.btn-black:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.about-text .btn-white a{
+    text-decoration: none;
+    color:black;
+    
+}
+.about-text .btn-white{
+    padding: 10px 25px;
+    transition: .5s all;
+    border-radius: 10px;
+}
+
+.btn-white:hover{
+    background-color: black;
+    color: white;
+}
+
+/* start Services */
+.titile h2{
+    font-size: 80px;
+    font-weight: bold;
+}
+.icon-ser{
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    background-color: rgb(219, 233, 233);
+    transition: .5s all
+}
+.itam:hover .icon-ser{
+    background-color: black;
+    color: white;
+}
+
+.nav-pills .nav-link{
+    color: black;
+    font-weight: bold;
+    padding-right: 15px;
+}
+.nav-pills .nav-link.active{
+    background-color: transparent;
+    position: relative;
+    color: black;
+}
+.nav-pills .nav-link.active::after{
+    content: "";
+    height: 3px;
+    width: 80px;
+    background-color: black;
+    position: absolute;
+    top: 40px;
+    bottom: 5px;
+    left: 0;
+}
+
+
+
+
+
+/* end Services */
+
+/* stert Portfolio */
+.work-ar{
+    position: relative;
+}
+.hov{
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 1s all;
+}
+.work-ar:hover .hov{
+    opacity: 1;
+}
+.work-ar .sm-icon span{
+    height: 15px;
+    width: 15px;
+    border: 1px solid ;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: black;
+}
+.work-ar .sm-icon a{
+    text-decoration: none;
+    color: white;
+}
+/* end Portfolio */
+
+/* start Testimonials  */
+
+#Clients{
+    margin-top:60px ;
+    position: relative;
+    padding-bottom: 60px;
+}
+.carousel-indicators{
+   /* background-color: brown; */
+    bottom: -70px;
+}
+.carousel-indicators [data-bs-target]{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(198, 202, 202);
+}
+.statictic{
+    margin-top: 30px;
+}
+
+.statictic h4{
+    font-size: 30px;
+    font-weight:bold;
+}
+/* end Testimonials */
+
+/* start blog  */
+.text-blog h4{
+    cursor: pointer;
+}
+.blog{
+    overflow: hidden;
+}
+.blog img{
+    transition: 1s;
+}
+.blog img:hover{
+    transform: scale(1.2);
+}
+/* end blog */
+
+
+.icon-contect{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: rgb(215, 225, 225);
+    padding-top: 15px;
+    margin: auto;
+}
+.icon-contect:hover{
+    background-color: black;
+    color: white;
+}
+.in-but button{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    transition: 1s all;
+}
+.in-but button:hover{
+    background-color: transparent;
+    color: black;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    padding-block:30px;
+}
+
+
+
+
+
+
+/* https://drive.google.com/file/d/12v8sptgiURxZZheOpnMgR4oxLT_LAcjG/view?usp=sharing */
